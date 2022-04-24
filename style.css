@@ -1,0 +1,88 @@
+body {
+    background-image: url(img/dino.png) ;
+}
+
+h1 {
+    background-color: rgba(116, 119, 116, 0.801);
+    font-family: Titulo;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    border: solid;
+   
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+#main {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+#fundoGame {
+    width: 950px;
+    height: 630px;
+    background-color: #c0c0c0;
+    border-color: black;
+    border: 3px solid;
+}
+
+#instrucoes {
+    background-color: dimgrey;
+    border: solid;
+    width: 950px;
+}
+
+.background {
+    background-image: url(img/background.png);
+    width: 950px;
+    height: 300px;
+    position: absolute;
+    top: 120px;
+    background-repeat: repeat-x;
+    animation: sliderRight 600s infinite linear;
+}
+
+.inicio {
+    background-color: white;
+    width: 950px;
+    height: 600px;
+}
+
+.dino {
+    background-image: url(img/dino.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 30px;
+    top: 190px;
+}
+
+.cactus {
+    background-image: url(img/cactus.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 190px;
+}
+
+@keyframes sliderRight {
+    from {
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
